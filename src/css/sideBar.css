@@ -1,0 +1,228 @@
+.SidebarGroup{
+    width: 260px;
+    background-color: var(--dark-color);
+    border-right: 0.5px solid var(--boder-color);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.Compact{
+    width: 100px;
+}
+.rotateArrow{
+    transform: rotateY(180deg);
+}
+.SidebarHeader{
+    width: 100%;
+    height: 88px;
+    display: flex;
+}
+.SidebarLogo{
+    margin-left: 10px;
+    width: 48px;
+    height: 50px;
+    margin-top: 38px;
+    display: flex;
+    align-items:flex-end;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.SidebarInnermost{
+    width: 19.25px;
+    height: 19.25px;
+    background-color: #FFCE22;
+    position: relative;
+    margin-bottom: 4px;
+    border-radius: 5px;
+    transform: rotateZ(-45deg);
+    transition: all 0.3s ease;
+}
+.SidebarBottom{
+    width: 31.93px;
+    height: 31.93px;
+    background-color: rgba(255, 203, 69, 0.3);
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 5px;
+}
+.Sidebartop{
+    Width: 33.36px;
+    Height : 33.36px;
+    background-color: rgba(255, 206, 34, 0.52);
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+}
+.SidebarTitleGroup{
+    width: 84px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+}
+.SidebarTitle{
+    color: var(--text-color);
+    width: 74px;
+    height: 39px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 39px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    margin-bottom: 0px;
+}
+.SidebarIconGroup{
+    flex:1;
+    display: flex;
+    justify-content: center;
+}
+.SidebarIcon{
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.SidebarArrow{
+    width: 100%;
+    height: 18px;
+    margin-bottom: 5px;
+    position: relative;
+    transition: all 0.3s linear;
+}
+.SidebarArrowPointTop,.SidebarArrowPointBottom{
+    width: 5px;
+    height: 13.7px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    position: absolute;
+    left: 2.5px;
+}
+.SidebarArrowPointTop{
+    top: -1px;
+    transform: rotateZ(45deg);
+}
+.SidebarArrowPointBottom{
+    bottom: -1px;
+    transform: rotateZ(-45deg);
+}
+.SidebarArrowLine{
+    width: 100%;
+    height: 5px;
+    background-color: var(--text-color);
+    border-radius: 2px;
+    position: absolute;
+    top: 6.5px;
+    left: 2px;
+}
+.SidebarArrowSpanTop,.SidebarArrowSpanBottom{
+    width: 12px;
+    height: 2px;
+    background-color: var(--boder-color);
+    position: absolute;
+    right: 0px;
+    border-radius:28%
+}
+.SidebarArrowSpanBottom{
+    bottom: 0px;
+}
+.SidebarList{
+    width: 100%;
+    height: calc(100% - 88px);
+    display: flex;
+    justify-content: center;
+}
+.SidebarListItem{
+    width: 77.5%;
+    margin-top: 40px;
+    padding: 0 22px;
+}
+.SidebarItem{
+    display: flex;
+    height: 56px;
+    align-items: center;
+    width: 100%;
+    color: #5E6167;
+    transition: all 0.3s linear;
+}
+.sidebarItemIcon{
+    margin-left: 18px;
+    width: 24px;
+}
+.sidebarItemIcon svg rect{
+    stroke: #5E6167;
+}
+.choose .sidebarItemIcon svg rect{
+    stroke: #FFD149;
+}
+.choose .sidebarItemIcon svg path{
+    fill: none;
+    stroke: #FFD149;
+    stroke-opacity: 1;
+}
+.SidebarItem:nth-child(2) svg{
+    width:20px;
+    height:20px; 
+    fill:"none"
+}
+.sidebarItemText{
+    margin-left: 21px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+}
+.hidden{
+    display: none;
+    width: 0;
+    opacity: 0;
+    position: absolute;
+    height: 0;
+}
+.none{
+    display: none;
+}
+.choose{
+    color: #FFD149;
+    background-color: #0b0c0d;
+    border-radius: 14px;
+}
+.link{
+    text-decoration: none;
+}
+@media screen and (max-width:1024px ){
+    .SidebarGroup{
+        max-width: 200px;
+    }
+    .Compact {
+        width: 100px;
+    }
+}
+@media screen and (max-width:768px ){
+    .SidebarGroup{
+        position: fixed;
+        z-index: 1000000000;
+        top: 40px;
+        left: 0px;
+        transition: 0.5s;
+        bottom: 0px;
+    }
+    .SidebarHeader{
+        display: none;
+    }
+    .MobileSidebar{
+        left: -100%;
+        display: block;
+    }
+}
+@media only screen and (max-width: 480px){
+    .SidebarGroup{
+        top: 40px;
+    }
+}

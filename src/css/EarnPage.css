@@ -1,0 +1,243 @@
+.EarnContainer{
+    flex: 1;
+    margin-top: 0px;
+    height: 100%;
+    background-color: var(--dark-color);
+    overflow-y: scroll;
+}
+.EarnContainer::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+.EarnContainer::-webkit-scrollbar-thumb{
+    background-color: var(--text-select);
+    border-radius: 5px;
+}
+.EarnHeader{
+    display: flex;
+    width: 95%;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #575757;
+    margin-top: 20px;
+}
+.EarnHeaderLeft h3{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.EarnMain{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+.EarnMainMenu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+}
+.EarnMainMenu li{
+    list-style: none;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.3);
+    width: 124px;
+    height: 36px;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 10px;
+    border-radius: 21px;
+    transition: 0.5s;
+}
+.EarnMainMenu .EarnMainMenuChoose{
+    color: #FFD149;
+    background-color: #000000;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.EarnMainTitle{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.EarnMainTitle h3{
+    width: 50%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+.EarnMainTitleBackground{
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    border-bottom: 0.5px solid #575757;;
+}
+.EarnMainTitleFloor{
+    height: 100%;
+    width: 70%;
+    background: radial-gradient(47.04% 31.1% at 50% 109.09%, rgba(255, 209, 73, 0.64) 0%, rgba(255, 209, 73, 0) 100%);
+}
+.EarnMainTitleBackground button{
+    position: absolute;
+    width: 257px;
+    height: 56px;
+    background-color: #FFD149;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    color: #121517;
+    bottom: 43px;
+}
+.EarnMainContent{
+    width: 100%;
+}
+.EarnMainContent h3{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 85px;
+}
+.EarnMainContentItem{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.EarnMainContentItem p{
+    width: 100%;
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.3);
+}
+.EarnMainFooter{
+    width: 100%;
+    margin-top: 50px;
+}
+.EarnMainFooter ul{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 0%;
+}
+.EarnMainFooter ul li{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    list-style: none;
+    margin-left: 15px;
+}
+.EarnMainLiquidity{
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.EarnMainMining{
+    z-index: 1;
+    transition: 0.5s;
+    opacity: 1;
+}
+.EarnMainContent ul{
+    margin: 0%;
+    display: flex;
+}
+.EarnMainContent ul li{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.3);
+    list-style: none;
+    margin-right: 25px;
+    margin-top: 25px;
+}
+.unShow{
+    position: absolute;
+    z-index: -1;
+    left: -200%;
+    opacity: 0;
+    top: 0%;
+}
+.EarnMainContent ul .EarnMainContentMenuChoose{
+    color:#FFD149;
+    text-decoration-line: underline;
+}
+.EarnMainContentSearch {
+    margin-top: 20px;
+    border-radius: 14px;
+    background-color: #000000;
+    height: 46px;
+    width: 240px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 130px;
+}
+.EarnMainContentSearch input{
+    width: 60%;
+    border: none;
+    margin-left: 20px;
+    outline: none;
+    background-color: #000000;
+    color: white;
+}
+.EarnMainContentSearch svg{
+    margin-right: 20px;
+}
+@media screen and (max-width:768px ){
+    .EarnHeader{
+        height: 60px;
+        position: fixed;
+        top: 0px;
+        z-index: 100000000000000;
+    }
+    .EarnMain{
+        margin-top: 60px;
+    }
+}

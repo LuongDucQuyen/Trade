@@ -1,0 +1,213 @@
+.homeHeader{
+    width: 100%;
+    height: 88px;
+    background-color: var(--dark-color);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.homeButton{
+    margin-left: 32px;
+    Width: 241px;
+    Height:46px;
+    border-radius:14px;
+    background-color: #0b0c0d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchButton{
+    width: 181px;
+    outline: none;
+    border: none;
+    background-color: #0b0c0d;
+    padding-left: 10px;
+    color: white;
+}
+.homeButtonIcon{
+    width: 48px;
+}
+.homeHeaderRight{
+    display: flex;
+    align-items: flex-end;
+}
+.homeOptionsChain{
+    width: 182px;
+    Height:46px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+.homeOptionsSelect{
+    color: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+}
+.homeOptionsSelect h3{
+    margin: 0px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+}
+.homeOptionsDownIconLeft,.homeOptionsDownIconRight{
+    width: 8px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 2px;
+}
+.homeOptionsSelectDownIcon{
+    width: 16px;
+    height: 8px;
+    margin-left: 10px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+}
+.homeOptionsDownIconLeft{
+    transform: rotateZ(45deg);
+    left: 2px;
+}
+.homeOptionsDownIconRight{
+    transform: rotateZ(-45deg);
+    right: 2px;
+}
+.ConnectWalletWrapper{
+    width: 275px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+}
+.connectWallet{
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 203px;
+    border-radius: 10px;
+    background: linear-gradient(99.17deg, #FFCB48 20.07%, #FFED48 70.52%);
+}
+.connectWallet h3{
+    margin: 0px;
+    font-family: "Ubuntu";
+    font-style: "Regular";
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 300;
+    vertical-align: Top;
+    letter-spacing: 5%;
+    color: #121517;
+}
+.homeButtonMobile{
+    display: none;
+}
+.homeHeaderLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width:1024px ){
+    .ConnectWalletWrapper{
+        width: 210px;
+    }
+    .connectWallet{
+        width: 190px;
+    }
+    .homeButton {
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 920px) {
+    .homeHeader {
+        height: 60px;
+    }
+    .ConnectWalletWrapper {
+        width: 130px;
+        height: 40px;
+        align-items: center;
+    }
+    .connectWallet {
+        height: 30px;
+    }
+    .ConnectWalletWrapper h3{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .homeButton {
+        height: 30px;
+        width: 150px;
+    }
+    .searchButton {
+        width: 100px;
+    }
+    .homeButtonIcon {
+        width: 30px;
+    }
+    .homeHeaderRight{
+        margin-right: 10px;
+    }
+  }
+@media screen and (max-width:768px ){
+    .homeButtonMobile{
+        display: block;
+    }
+    .homeButtonMobile{
+        background-color: #FFED48;
+        border: none;
+        margin-left: 10px;
+    }
+    .homeHeader {
+        border-bottom: 0.5px solid white;
+        padding-bottom: 10px;
+        position: fixed;
+        top: 0px;
+        z-index: 10000000000000000000;
+    }
+}
+@media only screen and (max-width: 480px){
+    .homeHeader {
+        height: 60px;
+    }
+    .homeOptionsChain{
+        display: none;
+    }
+    .ConnectWalletWrapper {
+        width: 130px;
+        height: 40px;
+        align-items: center;
+    }
+    .connectWallet {
+        height: 30px;
+    }
+    .ConnectWalletWrapper h3{
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .homeButton {
+        height: 30px;
+        width: 150px;
+    }
+    .searchButton {
+        width: 100px;
+    }
+    .homeButtonIcon {
+        width: 30px;
+    }
+    .homeHeaderRight{
+        margin-right: 10px;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    .homeButton {
+        display: none;
+    }
+  }
