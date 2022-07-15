@@ -1,0 +1,287 @@
+.homeCenter {
+  flex: 1;
+  height: 100%;
+  margin-top: 43px;
+  border-right: 0.5px solid var(--boder-color);
+}
+.homeCenterPanner {
+  width: 93%;
+  height: 296px;
+  background: linear-gradient(282.17deg, #ffcd49 7.81%, #cc8e46 119.76%);
+  border-radius: 40px;
+  margin: auto;
+  display: flex;
+}
+.homeCenterPannerText {
+  width: 50%;
+  height: 100%;
+  flex-wrap: wrap;
+  padding-left: 26px;
+}
+.homeCenterPannerCircle {
+  width: 50%;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.homeCenterPannerText h4 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #f8f8f8;
+  margin: 3px 0px;
+}
+.homeCenterPannerText h4:first-child {
+  margin-top: 27px;
+}
+.homeCenterPannerText h3 {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-transform: capitalize;
+  color: #f8f8f8;
+  margin: 6px 0px;
+}
+.homeCenterPannerButton {
+  width: 160px;
+  height: 49px;
+  background: #242731;
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  margin-top: 24px;
+  border: none;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  padding: 0px;
+}
+.homeCenterPannerSliderButton {
+  display: flex;
+  margin-top: 20px;
+}
+.homeCenterPannerSliderButton button {
+  width: 31px;
+  height: 2px;
+  border: none;
+  margin-right: 8px;
+  background-color: #818181;
+}
+.homeCenterPannerCircle {
+  position: relative;
+}
+.homeCenterPannerCircleOrange,
+.homeCenterPannerCircleBlue,
+.homeCenterPannerCirclePink {
+  position: absolute;
+  border-radius: 50%;
+}
+.homeCenterPannerCircleOrange {
+  width: 125px;
+  height: 125px;
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #ffb84d 0%,
+      rgba(119, 43, 0, 1) 100%
+    ),
+    #ff8a00;
+  box-shadow: 0px 0px 24.7407px rgba(255, 255, 255, 0.13),
+    74.2222px 148.444px 98.963px rgba(255, 148, 22, 0.33),
+    inset 0px 4.94815px 37.1111px rgba(255, 255, 255, 0.76),
+    inset 0px -24.7407px 61.8519px rgba(255, 255, 255, 0.53);
+  top: 8%;
+}
+.homeCenterPannerCircleBlue {
+  width: 74.22px;
+  height: 74.22px;
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #ffe3d3 0%,
+      rgba(179, 0, 183, 1) 100%
+    ),
+    #00caf7;
+  box-shadow: 0px 0px 24.7407px rgba(255, 255, 255, 0.13),
+    74.2222px 148.444px 98.963px rgba(255, 180, 215, 0.33),
+    inset 0px 4.94815px 24.7407px rgba(255, 255, 255, 0.76),
+    inset 0px -24.7407px 24.7407px rgba(255, 255, 255, 0.23),
+    inset 12.3704px 24.7407px 123.704px #583dff;
+  right: 34.4%;
+  top: 9%;
+}
+.homeCenterPannerCirclePink {
+  width: 216.48px;
+  height: 216.48px;
+  background: radial-gradient(
+      96% 96% at 70.4% 31.2%,
+      #ffe3d3 0%,
+      rgba(179, 0, 183, 1) 100%
+    ),
+    #c500f7;
+  box-shadow: 0px 0px 24.7407px rgba(255, 255, 255, 0.13),
+    50px 10px 98.963px rgba(255, 157, 203, 0.33),
+    inset 0px 4.94815px 37.1111px rgba(255, 255, 255, 0.76),
+    inset 0px -24.7407px 61.8519px rgba(255, 255, 255, 0.53),
+    inset 12.3704px 24.7407px 123.704px #ff8777;
+  right: 21.5%;
+  bottom: -10%;
+}
+.homeCenterPannerCircleClose {
+  width: 30px;
+  height: 30px;
+  background: #242731;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  position: absolute;
+  top: 21px;
+  right: 24px;
+  border: none;
+}
+.homeCenterPannerCircleClose div {
+  width: 12.7px;
+  height: 2px;
+  background-color: #f8f8f8;
+  position: absolute;
+  border-radius: 5px;
+  top: 14px;
+  left: 9px;
+}
+.homeCenterPannerCircleClose div:nth-child(1) {
+  transform: rotateZ(-45deg);
+}
+.homeCenterPannerCircleClose div:nth-child(2) {
+  transform: rotateZ(45deg);
+}
+.homeCenterContent {
+  width: 100%;
+  margin-top: 58px;
+}
+.homeCenterContentMenu {
+  height: 36px;
+  width: 93%;
+  margin: auto;
+  display: flex;
+}
+.homeCenterContentMenuLeft {
+  width: 70%;
+  height: 100%;
+}
+.homeCenterContentMenuLeft ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0%;
+}
+.homeCenterContentMenuLeft ul li {
+  list-style: none;
+  width: 22.3%;
+  height: 100%;
+  background-color: #0b0c0d;
+  border-radius: 21px;
+  box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0%;
+}
+.homeCenterContentMenuLeft ul li p {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #ffffff;
+  opacity: 0.3;
+  margin: 0%;
+  padding: 0px;
+}
+.homeCenterContentMenuRight {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.homeCenterContentMenuRight div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.homeCenterContentMenuRight div h4 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
+  color: #f0f0f0;
+}
+@media screen and (max-width: 1180px) {
+  .homeCenterPannerCircleOrange {
+    width: 120px;
+    height: 120px;
+  }
+  .homeCenterPannerCircleBlue {
+    width: 80px;
+    height: 80px;
+  }
+  .homeCenterPannerCirclePink {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .homeCenterPannerCircleOrange {
+    width: 100px;
+    height: 100px;
+  }
+  .homeCenterPannerCircleBlue {
+    width: 60px;
+    height: 60px;
+  }
+  .homeCenterPannerCirclePink {
+    width: 180px;
+    height: 180px;
+    bottom: 0%;
+  }
+  .homeCenterContentMenuLeft ul li p {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 920px) {
+  .homeCenterPannerCircle {
+    display: none;
+  }
+  .homeCenterPannerText {
+    width: 100%;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .homeCenterPanner {
+    box-shadow: 0px 0px 24.7407px rgb(255 255 255 / 13%),
+      50px 10px 98.963px rgba(255, 240, 157, 0.33),
+      inset 0px 4.94815px 37.1111px rgb(255 255 255 / 76%),
+      inset 0px -24.7407px 61.8519px rgb(255 255 255 / 53%),
+      inset 12.3704px 24.7407px 123.704px #ffb84d;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .homeCenterPannerText h4:first-child {
+    margin-top: 7px;
+  }
+}
+

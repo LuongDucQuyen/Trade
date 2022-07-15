@@ -1,0 +1,96 @@
+.circle-wrap {
+  position: absolute;
+  top: 31px;
+  left: calc((100% - 101.44px) / 2);
+  width: 101.44px;
+  height: 101.44px;
+  background: #242731;
+  border-radius: 50%;
+}
+.circleSvg {
+  width: 101.44px;
+  height: 101.44px;
+  position: relative;
+}
+.bg {
+  fill: none;
+  stroke-width: 6px;
+  stroke: #05050f;
+}
+.bg3 {
+  fill: none;
+  stroke-width: 2px;
+  stroke: #6a6a9f;
+}
+[class^="meter-"] {
+  fill: none;
+  stroke-width: 10px;
+  stroke-linecap: round;
+  transform-origin: 50% 50%;
+}
+
+.meter-1 {
+  transform: rotateZ(-210deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 280;
+  stroke-width: 6.94792;
+  animation: progress-1 5s ease-out;
+  animation-iteration-count: infinite;
+}
+.meter-2,
+.meter-3 {
+  transform: rotateZ(275deg);
+  transform-origin: 50% 50%;
+  stroke-dasharray: 360;
+  stroke-dashoffset: 190;
+  stroke-width: 6.94792;
+}
+.meter-2 {
+  animation: progress-2 4s ease-out;
+  animation-iteration-count: infinite;
+}
+.meter-3 {
+  animation: progress-3 7s ease-out;
+  animation-iteration-count: infinite;
+}
+.circle-wrap svg:nth-child(2) {
+  position: absolute;
+  top: calc((100% - 16px) / 2);
+  left: calc((100% - 16px) / 2);
+}
+@keyframes progress-1 {
+  0% {
+    transform: rotateZ(-210deg);
+  }
+  50% {
+    transform: rotateZ(-30deg);
+  }
+  100% {
+    transform: rotateZ(150deg);
+  }
+}
+
+@keyframes progress-2 {
+  0% {
+    transform: rotateZ(275deg);
+  }
+  50% {
+    transform: rotateZ(95deg);
+  }
+  100% {
+    transform: rotateZ(-85deg);
+  }
+}
+
+@keyframes progress-3 {
+  0% {
+    transform: rotateZ(275deg);
+  }
+  40% {
+    transform: rotateZ(455deg);
+  }
+  100% {
+    transform: rotateZ(-85deg);
+  }
+}

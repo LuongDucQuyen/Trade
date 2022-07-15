@@ -1,0 +1,201 @@
+.CoreMain{
+    width: 93%;
+    margin: auto;
+    margin-top: 43px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.itemGroup{
+    width: 48.1%;
+    height: 194px;
+    background-color: #242731;
+    margin-bottom: 34px;
+    border-radius: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.ItemGroupTop{
+    height: 50px;
+    border-bottom: 0.5px solid var(--boder-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 19px;
+}
+.ItemGroupTopLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ItemGroupTopLogo , .ItemGroupTopLogo img{
+    width: 30px;
+    height: 30px;
+}
+.ItemGroupTopLogoName {
+    margin-left: 9px;
+}
+.ItemGroupTopLogoName h5 , .ItemGroupTopLogoName p {
+    margin: 0%;
+    padding: 0px;
+    font-family: 'Ubuntu';
+}
+.ItemGroupTopLogoName h5{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.ItemGroupTopLogoName p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.32;
+}
+.ItemGroupTopRight{
+    Width:36.82px;
+    height: 22.23px;
+    background-color: #3247E6;
+    box-shadow: 0px 0px 10.4219px rgba(50, 71, 230, 0.3);
+    border-radius: 11.1167px;
+    margin-right: 25.18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ItemGroupTopRight p{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 9.03229px;
+    line-height: 11px;
+    text-align: center;
+    letter-spacing: 0.0138958px;
+    color: #FFFFFF;
+}
+/*==========================*/
+.ItemGroupBottom{
+    height: 49px;
+    width: 100%;
+    background: linear-gradient(273.62deg, #FFCB48 6.66%, #FFED48 97.92%);
+    box-shadow: 0px 4px 10px rgba(227, 171, 27, 0.5);
+    border-radius: 0px 0px 30px 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.ItemGroupBottom p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin: 0%;
+    padding: 0px;
+}
+.itemGroup:hover .ItemGroupBottom{
+    opacity: 1;
+    cursor: pointer;
+}
+.ItemGroupPrice{
+    height: 28px;
+    width: 100%;
+    margin-top: 9px;
+    padding: 0 18px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.ProductPrice p {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+.ProductPercentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeRightPercentChange .down{
+    transform: rotateZ(180deg);
+    border-bottom: 5.56px solid #DD5E5E;
+}
+.homeRightPercentChange .ProductPercentageChange{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.72708px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.305708px;
+    color: #5EFF5A;
+    margin: 0px;
+    padding: 0%;
+}
+.homeRightPercentChange .red{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.72708px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.305708px;
+    color: #DD5E5E;
+    margin: 0px;
+    padding: 0%;
+}
+.SeeMore{
+    width: 91px;
+    height: 24px;
+    background: linear-gradient(180deg, #FFCB48 0%, #FFED48 100%);
+    border-radius: 6px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 83px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.SeeMore p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin: 0%;
+    padding: 0%;
+}
+.SeeMore:hover{
+    background:  linear-gradient(282.17deg, #FFCD49 7.81%, #CC8E46 119.76%);
+}
+.ItemGroupGraph{
+    position: relative;
+}

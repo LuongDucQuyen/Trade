@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import Sidebar from './viewFrame/sidebar'
+import HomePage from './viewFrame/homePage/homePage'
+import TradePage from './viewFrame/trade/tradePage'
+import EarnPage from './viewFrame/EarnPage/EarnPage'
+import MarketPage from './viewFrame/MarketTab/MarketPage'
+import DerivativesPage from './viewFrame/DerivativesTab/DerivativesPage'
+import SettingsPage from './viewFrame/SettingsTab/SettingsPage'
+import "./css/App.css"
+import {useContext} from "react";
+import { TabContext } from "./TabContext"
 
 function App() {
+  const TabState = useContext(TabContext)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Sidebar ClassItem = {TabState.listItem} ></Sidebar>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="Trade" element={<TradePage />} />
+          <Route path="Earn" element={<EarnPage />} />
+          <Route path="Market" element={<MarketPage />} />
+          <Route path="Derivatives" element={<DerivativesPage />} />
+          <Route path="Settings" element={<SettingsPage />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+    
   );
 }
 

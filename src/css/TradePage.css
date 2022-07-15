@@ -1,0 +1,586 @@
+.tradeMain{
+    flex: 1 1;
+    height: 100%;
+    background-color: var(--dark-color);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.tradeMain::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+.tradeMain::-webkit-scrollbar-thumb{
+    background-color: var(--text-select);
+    border-radius: 5px;
+}
+.tradeBody{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tradeDayDetails{
+    width: 100%;
+    display: flex;
+    height: 75px;
+    margin: auto;
+    background-color: #252731;
+    justify-content: space-between;
+    margin-left: 31px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+    padding-left: 21px;
+}
+.tradeDayDetailsItem:nth-child(1){
+    width: 19%;
+}
+.tradeDayDetailsItem:last-child{
+    width: 19%;
+}
+.tradeDayDetailsItem{
+    width: 13%;
+    display: flex;
+    align-items: center;
+}
+.tradeDayDetails div:nth-child(1) img{
+    width: 38px;
+    height: 38px;
+}
+.tradeDayDetailsItemText{
+    display: block;
+    margin-left: 9px;
+}
+.tradeDayDetailsItemText h3 , .tradeDayDetailsItemText p{
+    margin: 0%;
+    padding: 0%;
+}
+.tradeDayDetailsItemText h3{
+    display: flex;
+    align-items: center;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.tradeDayDetailsItemText p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    opacity: 0.3;
+}
+.tradeDayDetailsItemTextIcon{
+    margin-bottom: 5px;
+    margin-left: 2px;
+}
+.tradeDayDetailsItem{
+    position: relative;
+}
+.not{
+    display: none;
+}
+.currency{
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    background-color: #181B20;
+    width: 100px;
+    z-index: 3;
+    border-radius: 10px;
+    border: 1px solid #FFD149;
+}
+.currency ul li{
+    color: white;
+    list-style: none;
+    width: 100%;
+    margin: 5px 0px;
+    transition: 0.3s;
+}
+.currency ul li:hover{
+    color: #FFD149;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+.currency ul{
+    padding: 0%;
+    margin: 0%;
+    width: 100%;
+}
+.currency ul li p{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    text-align: center;
+}
+.tradeDayDetailsItem-title{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0%;
+    padding: 0%;
+}
+.tradeDayDetailsItem-Change, .tradeDayDetailsItem-description{
+    margin: 0%;
+    padding: 0%;
+}
+.tradeDayDetailsItem-Change{
+    margin-top: 5px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.305708px;
+    color: #5EFF5A;
+}
+.tradeDayDetailsItem-description{
+    margin-top: 5px;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.red{
+    color: #DD5E5E;
+}
+.change{
+    width: 8.34px;
+    height: 5.56px;
+    border-top: 0px;
+    box-sizing: border-box;
+    border-left: 4.17px solid rgba(0,0,0,0);
+    border-right: 4.17px solid rgba(0,0,0,0);
+    border-bottom: 5.56px solid #5EFF5A;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+.down{
+    transform: rotateZ(180deg);
+    border-bottom: 5.56px solid #DD5E5E;
+}
+.tradeChart{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 31px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.tradeChart-chart{
+    flex: 1;
+    height: 100%;
+    background-color: #252731;
+    border-radius: 20px;
+}
+.tradeChart-chart-title{
+    width: 100%;
+    height: 36px;
+    margin-top: 21px;
+    margin-bottom: 29px;
+    display: flex;
+    justify-content: space-between;
+}
+.tradeDayDetailsItemChangePercentage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tradeChart-chart-title-left{
+    display: flex;
+    margin-left: 23px;
+}
+.tradeChart-chart-title-left div{
+    width: 124px;
+    height: 36px;
+    border-radius: 21px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tradeChart-chart-title-left .floating{
+    background-color: #181B20;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+.tradeChart-chart-title-left .floating p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFD149;
+}
+.tradeChart-chart-title-left div p{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.5);
+}
+.tradeChart-chart-title-right{
+    margin-right: 24px;
+    display: flex;
+}
+.tradeChart-chart-title-right-item{
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+}
+.tradeChart-chart-title-right-item p{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #ECEFF1;
+    margin-left: 7px;
+}
+.tradeChart-chart-title-right-iconTime{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: relative;
+}
+.tradeChart-chart-title-right-iconTime div:nth-child(1){
+    width: 7px;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    left: calc((100% - 7px)/2);
+    top: calc((100% - 7px)/2);
+    transform:rotateZ(90deg);
+    border-radius: 2px;
+}
+.tradeChart-chart-title-right-iconTime div:nth-child(2){
+    width: 7px;
+    height: 1.5px;
+    background-color: white;
+    position: absolute;
+    left: calc((100% - 13px)/2);
+    top: calc((100% + 5px)/2);
+    transform:rotateZ(315deg);
+    border-radius: 2px;
+}
+.tradeChart-chart-title-right-iconArrow{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ECEFF1;
+    border-radius: 6px;
+    position: relative;
+}
+.tradeChart-chart-title-right-iconArrow div:nth-child(1){
+    position: absolute;
+    width: 10.3px;
+    height: 1.5px;
+    left: 4.08px;
+    bottom: 8.7px;
+    transform: rotateZ(-44deg);
+    background-color: white;
+}
+.tradeChart-chart-title-right-iconArrow div:nth-child(2){
+    position: absolute;
+    width: 5.6px;
+    height: 5.6px;
+    right: 6px;
+    top: 6.1px;
+    border-top: 1.5px solid white;
+    border-right: 1.5px solid white;
+    border-radius: 20%;
+}
+.tradeChart-chart-price{
+    height: 15px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.tradeChart-chart-Convert{
+    Width:275px;
+    Height:497px;
+    margin-left: 18px;
+    background-color: #252731;
+    border-radius: 20px;
+}
+.tradeChart-chart-price-title{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tradeChart-chart-price-title p{
+    font-size: 12px;
+    color: white;
+    opacity: 0.32;
+    margin: 0%;
+    padding: 0%;
+}
+.tradeChart-chart-price-title h6{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 9px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #F6806C;
+    margin-left: 5px;
+}
+.tradeDayListMenu{
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.tradeDayListMenu p{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 20px;
+}
+.tradeDayListMenu .tradeDayListMenuButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+}
+.tradeDayListMenu .tradeDayListMenuButton p{
+    font-size: 14px;
+    text-align: center;
+    color: #FFD149;
+    margin: 0%;
+    margin-right: 5px;
+    transition: 0.5s;
+}
+.tradeDayListMenu .tradeDayListMenuButton:hover{
+    background-color: #423201;
+}
+.tradeDayListMenu .tradeDayListMenuButton ul{
+    position: absolute;
+    margin: 0%;
+    padding: 0%;
+    top: 95%;
+    z-index: 1000000;
+    background-color: black;
+    color: #FFD149;
+    width: 100%;
+}
+.tradeDayListMenu .tradeDayListMenuButton ul li{
+    list-style: none;
+    width: 100%;
+    margin: 3px 0px;
+    cursor: pointer;
+}
+.tradeDayListMenu .tradeDayListMenuButton ul li:hover{
+    background-color: #423201;
+}
+.tradeListClose{
+    display: none;
+}
+@media screen and (max-width:1024px ){
+    .tradeChart{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .tradeChart-chart{
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .tradeChart-chart-Convert{
+        width: 200px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+    .tradeDayDetails{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:920px ){
+    .tradeBody{
+        margin-top: 50px;
+    }
+    .tradeChart{
+        flex-wrap: wrap;
+    }
+    .tradeChart-chart {
+        margin-right: 10px;
+        width: 100%;
+        flex: auto;
+        height: auto;
+        margin-bottom: 10px;
+        min-height: 500px;
+    }
+    .tradeChart-chart-Convert{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        height: auto;
+        margin-left: 10px;
+    }
+    .tradeConvertHeader {
+        height: 40px;
+        width: 100%;
+    }
+    .tradeChart-chart-Convert .tradeConvertMain {
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        justify-content: space-between;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    #from{
+        position: absolute;
+        top: -24px;
+    }
+    #to{
+        position: absolute;
+        top: -24px;
+        right: calc(40% - 67px);
+    }
+    .tradeConvertMain .tradeConvertMainFrom, .tradeConvertMain .tradeConvertMainTo {
+        width: 40%;
+    }
+    .tradeConvertMain .tradeConvertMainFrom{
+        margin-left: 10px;
+    }
+    .tradeConvertMain .tradeConvertMainTo {
+        margin-right: 10px;
+        margin-left: 0px;
+    }
+    .tradeConvertMain .tradeConvertMainConvert {
+        margin-left: 0px;
+        transform: rotateZ(90deg);
+    }
+    .tradeConvertMain h3 {
+        height: 30px;
+    }
+}
+@media screen and (max-width: 650px){
+    .tradeChart-chart {
+        display: none;
+    }
+    .tradeDayDetailsItem{
+        width: 15%;
+    }
+    .tradeDayDetailsItem:nth-child(1){
+        width: 30%;
+    }
+    .tradeDayDetailsItem:nth-child(2){
+        display: none;
+    }
+    .tradeDayDetailsItem-description{
+        font-size: 10px;
+    }
+    .tradeDayDetailsItem-title{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 480px){
+.tradeDayDetailsItem{
+    width: 22%;
+}
+.tradeDayDetailsItem:nth-child(2),.tradeDayDetailsItem:nth-child(6) {
+    display: none;
+}
+.tradeDayDetailsItem:nth-child(1){
+    width: 30%;
+}
+.tradeDayDetailsItemText h3{
+    font-size: 12px;
+}
+.tradeDayDetailsItemText p{
+    font-size: 10px;
+}
+.tradeDayDetails {
+    padding-left: 5px;
+    height: 60px;
+}
+.tradeDayDetailsItem-description{
+    font-size: 10px;
+}
+.tradeDayDetailsItem-title{
+    font-size: 12px;
+}
+#from ,#to{
+    position: relative;
+    width: 100%;
+}
+#to{
+    right: 0px;
+}
+.tradeConvertMain .tradeConvertMainFrom, .tradeConvertMain .tradeConvertMainTo{
+    width: 95%;
+}
+.tradeConvertMain .tradeConvertMainConvert{
+    transform: rotateZ(0deg);
+    margin-left: calc((100% - 39px)/2);
+}
+.tradeConvertMain .tradeConvertMainTo{
+    margin-left: 10px;
+}
+.tradeHistory{
+    display: none;
+}
+.tradeChart{
+    margin-bottom: 31px;
+}
+.tradeDayDetails div:nth-child(1) img{
+    width: 30px;
+    height: 30px;
+}
+}
+@media screen and (max-width: 380px){
+.tradeDayDetails{
+    height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.tradeDayDetailsItem{
+    width: 30%;
+}
+.tradeDayDetailsItem:nth-child(1){
+    width: 100%;
+}
+}

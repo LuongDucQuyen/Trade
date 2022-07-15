@@ -1,0 +1,64 @@
+.homeMain{
+    flex: 1;
+    height: 100%;
+    background-color: var(--dark-color);
+    overflow-y: scroll;
+}
+.homeMain::-webkit-scrollbar{
+    width: 5px;
+    background-color: black;
+}
+.homeMain::-webkit-scrollbar-thumb{
+    background-color: var(--text-select);
+    border-radius: 5px;
+}
+.homeBody{
+    width: 100%;
+    display: flex;
+}
+@media screen and (max-width:768px ){
+    .homeBody{
+        margin-top: 40px;
+    }
+}
+@media only screen and (max-width: 480px){
+    .homeBody{
+        margin-top: 40px;
+    }
+    .homeCenterContent {
+        margin-top: 40px;
+    }
+    .homeCenterContentMenuLeft {
+        width: 79%;
+    }
+    .homeCenterContentMenuLeft ul li {
+        width: 24.5%;
+    }
+    .homeCenterContentMenuRight div h4 {
+        font-size: 12px;
+    }
+    .homeOptionsSelectDownIcon {
+        margin-left: 0%;
+    }
+    .CoreMain {
+        justify-content: center;
+    }
+    .itemGroup {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .homeCenterContentMenu {
+      flex-wrap: wrap;
+    }
+    .homeCenterContentMenuLeft {
+      width: 100%;
+      height: 30px;
+    }
+    .homeCenterContentMenuLeft ul li {
+        height: 20px;
+    }
+    .homeCenterContentMenu {
+        box-sizing: border-box;
+    }
+  }
