@@ -1,11 +1,12 @@
 .noData{
-    flex: 1;
+    flex: 1 1;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: var(--dark-color);
+    overflow: hidden;
+    overflow-y: scroll;
 }
-.noData h3{
+.No-data-text{
+    margin-top: 74px;
     color: aqua;
-    font-size: 30px;
+    text-align: center;
 }

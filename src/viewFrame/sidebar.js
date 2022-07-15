@@ -46,7 +46,7 @@ const Sidebar = (props) => {
         </div>
         <div className="SidebarList">
           <div className="SidebarListItem">
-          <Link className = "link" to="/">
+          <Link className = "link" to="/" onClick={(e)=>{TabState.handleShowSideBar(e)}}>
           <div className={props.ClassItem.Home} id="Home" onClick={(e)=>{TabState.ShowTab("Home")}}>
               <div className="sidebarItemIcon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,7 +81,7 @@ const Sidebar = (props) => {
               <div className={ TabState.showSideBar ? "sidebarItemText hidden" : "sidebarItemText"}>Home</div>
             </div>
           </Link>
-          <Link className = "link" to="/Trade">
+          <Link className = "link" to="/Trade" onClick={(e)=>{TabState.handleShowSideBar(e)}}>
             <div className={props.ClassItem.Trade} id="Trade" onClick={(e)=>{TabState.ShowTab("Trade")}}>
               <div className="sidebarItemIcon">
                 <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -118,7 +118,7 @@ const Sidebar = (props) => {
               <div className={ TabState.showSideBar ? "sidebarItemText hidden" : "sidebarItemText"}>Trade</div>
             </div>
           </Link>
-          <Link className = "link" to="/Earn">
+          <Link className = "link" to="/Earn" onClick={(e)=>{TabState.handleShowSideBar(e)}}>
           <div className={props.ClassItem.Earn} id="Earn" onClick={(e)=>{TabState.ShowTab("Earn")}}>
               <div className="sidebarItemIcon">
                 <svg
@@ -163,7 +163,7 @@ const Sidebar = (props) => {
               <div className={ TabState.showSideBar ? "sidebarItemText hidden" : "sidebarItemText"}>Earn</div>
             </div>
           </Link>
-          <Link className = "link" to='/Market'>
+          <Link className = "link" to='/Market' onClick={(e)=>{TabState.handleShowSideBar(e)}}>
           <div className={props.ClassItem.Market} id="Market" onClick={(e)=>{TabState.ShowTab("Market")}}>
               <div className="sidebarItemIcon">
                 <svg
@@ -205,7 +205,7 @@ const Sidebar = (props) => {
               <div className={ TabState.showSideBar ? "sidebarItemText hidden" : "sidebarItemText"}>Market</div>
             </div>
           </Link>
-          <Link className = "link" to="Derivatives">
+          <Link className = "link" to="Derivatives" onClick={(e)=>{TabState.handleShowSideBar(e)}}>
           <div className={props.ClassItem.Derivatives} id="Derivatives" onClick={(e)=>{TabState.ShowTab("Derivatives")}}>
               <div className="sidebarItemIcon">
                 <svg
@@ -230,7 +230,7 @@ const Sidebar = (props) => {
               <div className={ TabState.showSideBar ? "sidebarItemText hidden" : "sidebarItemText"}>Derivatives</div>
             </div>
           </Link>
-          <Link className = "link" to="Settings">
+          <Link className = "link" to="Settings" onClick={(e)=>{TabState.handleShowSideBar(e)}}>
             <div className={props.ClassItem.Settings} id="Settings" onClick={(e)=>{TabState.ShowTab("Settings")}}>
               <div className="sidebarItemIcon">
                 <svg
