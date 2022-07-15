@@ -71,6 +71,9 @@ const TabPovider = ({ children }) => {
   const handleShowSideBar = ()=>{
     setShowSideBar(!showSideBar)
   }
+  const handleCloseSideBar = ()=>{
+    setShowSideBar(true)
+  }
 
   return (
     <TabContext.Provider
@@ -90,6 +93,7 @@ const TabPovider = ({ children }) => {
         getCurrency:getCurrency,
         showSideBar:showSideBar,
         handleShowSideBar:handleShowSideBar,
+        closeSideBar:handleCloseSideBar,
       }}
     >
       {children}
